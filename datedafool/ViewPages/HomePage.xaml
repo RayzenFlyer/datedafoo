@@ -33,21 +33,19 @@
                VerticalOptions="Start" />
         <BoxView Grid.Row="1"
                  Color="CornflowerBlue" />
-        <Label Grid.Row="1"
-               Text="Center left"
-               HorizontalOptions="Start"
-               VerticalOptions="Center" />
+        
+        <Button Grid.Row="1"
+                x:Name="ProfileButton"
+                Text="Profile"
+                Clicked="ProfileButton_Clicked"
+                Margin="30,30,30,30"
+                TextColor="White"
+                BackgroundColor="MediumPurple"/>
+        
         <BoxView Grid.Row="1"
                  Grid.Column="1"
                  Color="DodgerBlue" />
-        <Button Grid.Row="1"
-                Grid.Column="1"
-                x:Name="FindMatch"
-                Text="Find Match!"
-                Clicked="FindMatchButton_Clicked"
-                Margin="70,70,70,0"
-                TextColor="White"
-                BackgroundColor="MediumPurple"/>
+        
         <Button Grid.Row="1"
                 Grid.Column="1"
                 x:Name="FindBitch"
@@ -55,16 +53,20 @@
                 Clicked="FindMatchButton_Clicked"
                 Margin="30,30,30,30"
                 TextColor="White"
-                BackgroundColor="MediumPurple"/>                
+                BackgroundColor="DarkGreen"/>                
             
         <BoxView Grid.Row="1"
                  Grid.Column="2"
                  Color="DarkSlateBlue" />
-        <Label Grid.Row="1"
-               Grid.Column="2"
-               Text="Center right"
-               HorizontalOptions="End"
-               VerticalOptions="Center" />
+        
+        <Button Grid.Row="1"
+                Grid.Column="2"
+                x:Name="Skippit"
+                Text="Skippit!"
+                Clicked="SkippitButton_Clicked"
+                Margin="30,30,30,30"
+                TextColor="White"
+                BackgroundColor="DarkRed"/>
         <BoxView Grid.Row="2"
                  Color="SteelBlue" />
         <Label Grid.Row="2"

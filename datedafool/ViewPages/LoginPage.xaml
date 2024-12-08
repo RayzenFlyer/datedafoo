@@ -56,6 +56,14 @@
                     HorizontalOptions="Center"
                     BackgroundColor="MediumPurple"/>
 
+                <Button
+                x:Name="Register"
+                Text="Registeer hier!"
+                Clicked="Register_Clicked"
+                Margin="30,30,30,30"
+                TextColor="White"
+                BackgroundColor="MediumPurple"/>
+
             </VerticalStackLayout>
         </StackLayout>
     </StackLayout>

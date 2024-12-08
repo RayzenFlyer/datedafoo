@@ -9,7 +9,6 @@
 
     <local:HomePage     Title="Home" IconImageSource="homeicon.png" />
     <local:HomePage     Title="Settings" IconImageSource="settingsicon.png"/>
-    <local:LoginPage    Title="Mew"/>
 
 
 

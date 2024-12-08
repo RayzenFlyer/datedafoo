@@ -7,11 +7,25 @@ public partial class HomePage : ContentPage
 		InitializeComponent();
 	}
 
-    private void FindMatchButton_Clicked(object sender, EventArgs e)
+	private void FindMatchButton_Clicked(object sender, EventArgs e)
 	{
-		Navigation.PushAsync(new ViewPages.SettingsPage());
+		Navigation.PushAsync(new ViewPages.QuizzitPage());
+
+
+	
+	}
+	private void SkippitButton_Clicked(object sender, EventArgs e)
+	{
+		Navigation.PushAsync(new ViewPages.QuizzitPage());
 
 
 
 	}
+    private void ProfileButton_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new ViewPages.ProfilePage());
+
+
+
+    }
 }
