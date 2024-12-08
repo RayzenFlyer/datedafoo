@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="datedafool.ViewPages.LoginPage"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout Margin="20">
+
+        <Frame
+                BackgroundColor="Plum"
+                Padding="24"
+                CornerRadius="20">
+            <Label Text="Personified"
+                   TextColor="White"
+                   FontSize="36"
+                   Style="{StaticResource Headline}"
+                   HorizontalTextAlignment="Center"/>
+
+        </Frame>
+
+        <StackLayout>
+            <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="CenterAndExpand">
+
+                <Image
+                    x:Name="MistaImage"
+                    Source="mista.png"
+                    HeightRequest="185"
+                    Aspect="AspectFit"
+                    SemanticProperties.Description="Mista from jjba reading a book on how to love you" />
+
+                <Label
+                    x:Name="UsernameLabel"
+                    Text="Username here"
+                    HorizontalOptions="Center" />
+                <Entry 
+                    x:Name="UsernameEntry"
+                    Placeholder="Username:"
+                    HorizontalOptions="Center"/>
+                <Label
+                    x:Name="PasswordLabel"
+                    Text="Password:"
+                    HorizontalOptions="Center"/>
+                <Entry
+                    x:Name="PasswordEntry"
+                    Placeholder="Your Password here"
+                    HorizontalOptions="Center"
+                    IsPassword="True"/>
+                <Button
+                    x:Name="LogInButton"
+                    Text="Login!"
+                    Clicked="LogInButton_Clicked"
+                    Margin="0,40,0,0"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    BackgroundColor="MediumPurple"/>
+
+            </VerticalStackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
